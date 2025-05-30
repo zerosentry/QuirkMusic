@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIRK COLLECTIVE</title>
+    <style>
+        body {
+            background-image: url('https://www.hdwallpapers.in/download/dark_purple_black_paint_liquid_stains_4k_hd_abstract-2560x1440.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        //https://git.example.org/code/git
+
+        .text {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            outline: none;
+        }
+        
+        .header-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        }
+
+        .subtext {
+            color: white;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .release {
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact {
+            background-color: purple;
+            color: white;
+        }
+
+        .new-release {
+            color: white;
+        }
+
+        .artist-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .socials {
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+       <h1>
+            QUIRK COLLECTIVE
+       </h1>
+
+       <div class="subtext">
+        <h3>
+            Est. 2024
+        </h3>
+       </div>
+    </div>
+
+    <div class="text">
+        <h2>
+             Artists
+        </h2>
+    </div>
+
+    <div class="artist-container">
+        <iframe style="border-radius:20px" src="https://open.spotify.com/embed/artist/0iFt2JHozPl3PkOmBZAquR?utm_source=generator" width="300" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <iframe style="border-radius:20px" src="https://open.spotify.com/embed/artist/0reOir0cqpabsws2U2G8JP?utm_source=generator" width="300" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="release" onclick="redirectToSpotify()">
+        <h2>
+              Our newest release!
+        </h2>
+    </div>
+
+    <div>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2TQEozCCNADvpn9VSQzdmg?utm_source=generator" width="500" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="text">
+        <h2>
+            QUIRK Socials
+        </h2>
+    </div>
+
+    <div class="socials" 
+    onclick="redirectToInstagram()">
+            - Instagram: @quirkcollective_
+    </div>
+
+    <div class="socials" 
+    onclick="redirectToInstagram2()">
+            - Instagram: @gymdxvil
+    </div>
+
+    <div class="socials"
+    onclick="redirectToInstagram3()">
+            - Instagram: @nxxcturne
+    </div>
+
+    <script>
+        function redirectToInstagram() {
+            window.location.href = "https://www.instagram.com/quirkcollective_/";
+        }
+        function redirectToSpotify() {
+            window.location.href = "https://open.spotify.com/album/2TQEozCCNADvpn9VSQzdmg?si=NF8St_5nTrKio9VtRLZqLg";
+        }
+
+        function redirectToInstagram2() {
+            window.location.href = "https://www.instagram.com/gymdxvil/";
+        }
+
+        function redirectToInstagram3{
+            window.location.href = "https://www.instagram.com/nxxcturne/";
+        }
+    </script>
+</body>
+</html>
