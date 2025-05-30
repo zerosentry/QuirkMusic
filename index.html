@@ -75,13 +75,26 @@
             flex-wrap: wrap;
         }
 
+        .socials-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px; /* Optional: limits how wide the buttons stretch */
+        }
+
         .socials {
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: white;
-            border: none;
-             cursor: pointer;
-            font-size: 1.1rem;
+        width: 100%;
+        padding: 10px 20px;
+        color: white;
+        background-color: grey;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 8px;
         }
 
         iframe {
@@ -149,17 +162,17 @@
         <h2>QUIRK Socials</h2>
     </div>
 
-    <div class="socials" onclick="redirectToInstagram()">
-        - Instagram: @quirkcollective_
-    </div>
-
-    <div class="socials" onclick="redirectToInstagram2()">
-        - Instagram: @gymdxvil
-    </div>
-
-    <div class="socials" onclick="redirectToInstagram3()">
-        - Instagram: @nxxcturne
-    </div>
+    <div class="socials-container">
+        <div class="socials" onclick="redirectToInstagram()">
+        Instagram: @quirkcollective_
+        </div>
+        <div class="socials" onclick="redirectToInstagram2()">
+        Instagram: @gymdxvil
+        </div>
+        <div class="socials" onclick="redirectToInstagram3()">
+        Instagram: @nxxcturne
+        </div>
+</div>
 
     <script>
         function redirectToInstagram() {
